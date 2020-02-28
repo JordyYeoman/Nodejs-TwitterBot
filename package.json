@@ -1,0 +1,19 @@
+{
+  "name": "5eva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon bot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
+    "twit": "^2.2.11"
+  }
+}
