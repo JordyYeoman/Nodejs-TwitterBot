@@ -1,4 +1,4 @@
-const cron = require("node-cron");
+// const cron = require("node-cron");
 const { tweetIt } = require("./automate");
 
 let cronJobBoss = cron.schedule("*/30 * * * *", () => {

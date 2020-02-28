@@ -1,12 +1,12 @@
-const cron = require("node-cron");
+// const cron = require("node-cron");
 const { tweetIt } = require("./automate");
 
-let cronJobBoss = cron.schedule("*/1 * * * *", () => {
-  console.log("Running a task every 1 minute");
-  tweetIt();
-});
+// let cronJobBoss = cron.schedule("*/1 * * * *", () => {
+//   console.log("Running a task every 1 minute");
+//   tweetIt();
+// });
 
-cronJobBoss.start();
+setInterval(tweetIt, 1000 * 20);
 
 // Collecting tweets using a search parameter
 // const params = {
