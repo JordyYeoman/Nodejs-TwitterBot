@@ -6,7 +6,7 @@ const { tweetIt } = require("./automate");
 //   tweetIt();
 // });
 
-setInterval(tweetIt, 1000 * 20);
+setInterval(tweetIt, 1000 * 60 * 60);
 
 // Collecting tweets using a search parameter
 // const params = {
