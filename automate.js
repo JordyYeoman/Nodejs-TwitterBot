@@ -6,10 +6,11 @@ const btcPriceAggr = require("./btcPriceAggr");
 var T = new Twit(config);
 
 async function tweetIt() {
-  let r = await btcPriceAggr.fetchBtcPriceAud();
+  let b = await btcPriceAggr.fetchBtcPriceAud();
+  let e = await btcPriceAggr.fetchEthPriceAud();
 
   let tweet = {
-    status: `The current Bitcoin price in AUD is $${r}`
+    status: `The current Bitcoin price in AUD is $${b}, The current Ethereum price in AUD is $${e}`
   };
 
   T.post("statuses/update", tweet, tweeted);
@@ -23,6 +24,8 @@ async function tweetIt() {
     }
   }
 }
+
+tweetIt();
 
 module.exports = {
   tweetIt
