@@ -1,9 +1,10 @@
 // const cron = require("node-cron");
 const { tweetIt } = require("./automate");
 
+//TODO - Function call for aggregating average price for the entire day
 const dayInMilliseconds = 1000 * 60 * 60 * 24;
 
-setInterval(tweetIt, 1000 * 30);
+setInterval(tweetIt, 1000 * 60 * 60);
 
 // let cronJobBoss = cron.schedule("*/1 * * * *", () => {
 //   console.log("Running a task every 1 minute");
